@@ -143,18 +143,38 @@ text-decoration:none;
 border-radius:12px;
 font-weight:bold;
 }
-#login-platforms main p#login-platform-twitch a{
+p#login-platform-twitch a{
 background-color:#905efb;
 }
 
-#login-platforms main p#login-platform-twitch a:hover{
+p#login-platform-twitch a:hover{
 background-color:#a67efc;
 }
 
-#login-platforms main p#login-platform-youtube a{
+p#login-platform-youtube a{
 background-color:#cf1a51;
 }
 
-#login-platforms main p#login-platform-youtube a:hover{
+p#login-platform-youtube a:hover{
 background-color:#d72e61;
+}
+
+
+#user-profile main{
+display:flex;
+width:90%;
+margin-left:5%;
+justify-content:space-around;
+}
+
+#profile-user-info{
+flex-grow:2;
+}
+#profile-user-info p{
+display:flex;
+flex-direction:column;
+}
+
+#profile-user-info p input[type=submit]{
+width:128px;
 }

@@ -4,7 +4,7 @@
 		<title>Community Task Manager</title>
 		<link rel="stylesheet" href="ctm.css" />
 	</head>
-	<body>
+	<body id="user-profile">
 		<header>
 			<h1>Las Tareas</h1>
 
@@ -18,9 +18,11 @@
 			</nav>
 		</header>
 
-		<main>
-			<h2>Profile</h2>
+		<h2>Profile</h2>
 
+		<main>
+			<section id="profile-user-info">
+			<h3>User info</h3>
 			<form method="post" action="profile_update.php">
 			<p><label for="profile-username">Nombre de usuario:</label><input type="text" id="profile-username" name="username" /></p>
 			<p><label for="profile-name">Nombre:</label><input type="text" id="profile-name" name="name" /></p>
@@ -28,6 +30,25 @@
 			<p><label for="profile-birthday">Nacimiento:</label><input type="date" id="profile-birthday" name="birthday" /></p>
 			<p><input type="submit" value="¡Actualizar!" /></p>
 			</form>
+			</section>
+
+			<section id="profile-login-platforms">
+			<h3>Login platforms</h3>
+			<ul>
+				<li id="profile-twitch"><a href="login_twitch.php">Twitch: Manolita Papotas</a></li>
+				<li id="profile-youtube"><a href="login_youtube.php">Youtube</a></li>
+				<li id="profile-discord"><a href="login_discord.php">Discord</a></li>
+				<li id="profile-github"><a href="login_github.php">Github</a></li>
+			</ul>
+			</section>
+			
+			<section id="profile-stats">
+			<h3>Stats</h3>
+			<ul>
+				<li>X Tareas Completadas</li>
+				<li>Y Proyectos</li>
+			</ul>
+			</section>
 
 		</main>
 
