@@ -53,6 +53,16 @@ border-radius:8px;
 color:#000;
 }
 
+
+footer{
+display:flex;
+justify-content:space-around;
+background-color:#5d4197;
+}
+
+
+
+
 #carrousel{
 overflow:hidden;
 }
@@ -75,4 +85,76 @@ margin:0 2.5%;
 padding:0;
 background-color:#666;
 border-radius:16px;
+}
+
+#tasks-info{
+display:flex;
+justify-content:center;
+}
+#tasks-info h2{
+display:none;
+}
+#tasks-info ul{
+display:flex;
+justify-content:space-around;
+padding:0;
+width:86%;
+}
+#tasks-info li{
+width:48%;
+height:128px;
+background-color:#fff;
+border-radius:16px;
+list-style:none;
+}
+li#tasks-info-number{
+background-color:#4a9741;
+}
+li#tasks-info-projects{
+background-color:#97417c;
+}
+
+#login-platforms main h2{
+font-size:48px;
+text-align:center;
+}
+#login-platforms main article{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+#login-platforms main p{
+width:320px;
+height:160px;
+font-size:36px;
+padding:0;
+margin:0 0 32px 0;
+}
+#login-platforms main a{
+display:flex;
+justify-content:center;
+align-items:center;
+width:320px;
+height:160px;
+color:#fff;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+#login-platforms main p#login-platform-twitch a{
+background-color:#905efb;
+}
+
+#login-platforms main p#login-platform-twitch a:hover{
+background-color:#a67efc;
+}
+
+#login-platforms main p#login-platform-youtube a{
+background-color:#cf1a51;
+}
+
+#login-platforms main p#login-platform-youtube a:hover{
+background-color:#d72e61;
 }

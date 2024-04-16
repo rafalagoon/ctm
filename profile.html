@@ -4,7 +4,7 @@
 		<title>Community Task Manager</title>
 		<link rel="stylesheet" href="ctm.css" />
 	</head>
-	<body id="login-platforms">
+	<body>
 		<header>
 			<h1>Las Tareas</h1>
 
@@ -14,16 +14,23 @@
 					<li id="nav-projects"><a href="/projects">Projects</a></li>
 					<li id="nav-login"><a href="/signin">Sign in</a></li>
 				</ul>
+
 			</nav>
 		</header>
 
 		<main>
-			<h2>Login Platforms</h2>
-			<article>
-				<p id="login-platform-twitch"><a href="/login/twitch">Twitch</a></p>
-				<p id="login-platform-youtube"><a href="/login/youtube">Youtube</a></p>
-			</article>
+			<h2>Profile</h2>
+
+			<form method="post" action="profile_update.php">
+			<p><label for="profile-username">Nombre de usuario:</label><input type="text" id="profile-username" name="username" /></p>
+			<p><label for="profile-name">Nombre:</label><input type="text" id="profile-name" name="name" /></p>
+			<p><label for="profile-email">e-mail:</label><input type="email" id="profile-email" name="email" /></p>
+			<p><label for="profile-birthday">Nacimiento:</label><input type="date" id="profile-birthday" name="birthday" /></p>
+			<p><input type="submit" value="¡Actualizar!" /></p>
+			</form>
+
 		</main>
+
 		<footer>
 			<section>
 				<h2>Navigation</h2>
